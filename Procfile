@@ -1,1 +1,1 @@
-Arise: python3 -m Arise
+Arise: python3 -m AriseRobot
