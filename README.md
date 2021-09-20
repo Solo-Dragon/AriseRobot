@@ -1,6 +1,7 @@
 # AriseRobot
 
 Written Completely from scratch... by me 
+... 
 [Sung Jin-Woo](https://github.com/Solo-Dragon)
 
 ### About this shit
