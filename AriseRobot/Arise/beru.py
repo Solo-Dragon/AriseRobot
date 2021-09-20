@@ -40,7 +40,7 @@ async def help(_, message):
 async def shadow_extraction(_, message):
     await message.reply_text("This Shadow is alive and surging with power... \n**COMMAND ME** ")
     
-@ARISE.on_message(filters.user(NIGGERS, ME_ID) & ~filters.forwarded & ~filters.via_bot & filters.command("shutup"))
+@ARISE.on_message((filters.user(ME_ID) | filters.user(NIGGERS)) & ~filters.forwarded & ~filters.via_bot & filters.command("shutup"))
 async def mute(_, message):    
     try:
         chat_id = message.chat.id
@@ -54,7 +54,7 @@ async def mute(_, message):
     except Exception as e:
         await message.reply_text(str(e))
         
-@ARISE.on_message(filters.user(NIGGERS, ME_ID)& ~filters.forwarded & ~filters.via_bot & filters.command("speak"))
+@ARISE.on_message((filters.user(ME_ID) | filters.user(NIGGERS)) & ~filters.forwarded & ~filters.via_bot & filters.command("speak"))
 async def unmute(_, message: Message):
     try:
         chat_id = message.chat.id
@@ -75,7 +75,7 @@ async def info(_, message):
     except Exception as e:
         await message.reply_text(str(e))
         
-@ARISE.on_message(filters.user(ME_ID, NIGGERS) & filters.command("del"))
+@ARISE.on_message((filters.user(ME_ID) | filters.user(NIGGERS)) & filters.command("del"))
 async def delete(_, message: Message):
     await message.reply_to_message.delete()
     await message.delete()        
