@@ -7,7 +7,7 @@ import subprocess
 import time
 from io import StringIO
 
-import psutil
+## {unused import }import psutil
 from pyrogram import filters
 from pyrogram.errors import FloodWait
 
