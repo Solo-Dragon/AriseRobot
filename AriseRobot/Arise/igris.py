@@ -14,7 +14,7 @@ async def info(client, message):
                 [InlineKeyboardButton("BOT Support", url="https://t.me/kazutosupport")],
                 [InlineKeyboardButton("Add this NOOB bot to your Group", url = "t.me/AriseRobot?startgroup=true")]
               ]
-    await ARISE.send_message(chat_id = message.chat.id, text = START_MSG, reply_markup = InlineKeyboardMarkup(buttons))
+    await ARISE.send_message(chat_id = message.chat.id, text = IGRIS_START, reply_markup = InlineKeyboardMarkup(buttons))
     
     
     
