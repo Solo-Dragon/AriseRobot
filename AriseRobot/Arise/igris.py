@@ -6,6 +6,7 @@ IGRIS_START = """
 I am Arise Robot [(.)](https://mfiles.alphacoders.com/840/840043.png) `"check ing markdown."` \n
 **"blah blah robot. \n \nblah blah bot.”**
 lol
+waito fk oki{message.from_user.mention}
 """
     
 @ARISE.on_message(filters.command(["start"], prefixes = "/") & ~filters.edited)
