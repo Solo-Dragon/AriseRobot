@@ -16,3 +16,6 @@ emoji
 aiofiles
 youtube_dl
 regex
+dnspython
+future
+bs4
