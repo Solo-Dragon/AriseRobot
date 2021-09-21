@@ -35,7 +35,7 @@ async def help(_, message):
         /info info of a user in a group
         Working on it
         ''')
- '''   
+    
 @ARISE.on_message(filters.regex("arise"))
 async def shadow_extraction(_, message):
     await message.reply_text("This Shadow is alive and surging with power... \n**COMMAND ME** ")
